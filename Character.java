@@ -3,7 +3,7 @@
 //HW32 -- Ye Olde Role Playing Game, Expanded
 //2016-11-20
 
-public class Character{
+public abstract class Character{
 
     //instance vars
     protected String name;
@@ -42,17 +42,8 @@ public class Character{
     //prepares warrior to perform a special attack
     //decreases defense by 20
     //increases offense by .4
-    public void specialize(){
-	defense -= 20;
-	offense += 0.4;
-    }
-    //prepares warrior to perform a normal attack
-    //change deffense to default
-    //change offense to default
-    public void normalize(){
-	defense = 40;
-	offense = 0.4;
-    }
+    public abstract void specialize();
+    public abstract void normalize();
 
     public static String about(String role){
 	String str = "Role: ";
