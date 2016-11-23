@@ -21,6 +21,11 @@ public class Archer extends Character{
 	name = newName;
     }
 
+    //about this character
+    public String about(){
+	return "\nArchers are range weaponry that can also put down traps and have a pet to assist them.";
+    }
+    
     //reset player stats for a normal attack
     public void normalize(){
 	defense = 40;

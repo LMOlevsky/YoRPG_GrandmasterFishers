@@ -20,6 +20,11 @@ public class Warrior extends Character{
 	this();
 	name = newName;
     }
+
+    public String about(){
+	return "\nWarriors are melee specialists wielding close range weaponry and good at fighting enemies in head-to-head combat.";
+    }
+    
     public void specialize(){
 	defense = 20;
 	offense = 0.8;

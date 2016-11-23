@@ -45,27 +45,5 @@ public abstract class Character{
     public abstract void specialize();
     public abstract void normalize();
 
-    public static String about(String role){
-	String str = "Role: ";
-	str += role;
-	if (role.equals("Warrior")){
-	    str += "\nWarriors are melee specialists wielding close range weaponry and good at fighting enemies in head-to-head combat.";
-	}
-	if (role.equals("Monster")){
-	    str += "\nMonsters are NPCs that spread all over the map. Killing them can gain experience and golds and weapons.";
-	}
-	if (role.equals("Mage")){
-	    str += "\nMage is a Glass Cannon, blasting away at long range, but easily taken down at close range.";
-	}
-	if (role.equals("Rogue")){
-	    str += "\nRogue prefers to attack when their opponent is least aware. They also can steal properties from their opponents.";
-	}
-	if (role.equals("Archer")){
-	    str += "\nArchers are range weaponry that can also put down traps and have a pet to assist them.";
-	}
-	if (role.equals("Healer")){
-	    str += "\nHealers are a type of Mage that almost deal zero damage but instead they can help their teammates to regain hp.";
-	}
-	return str;
-    }
+    public abstract String about();
 }

@@ -19,7 +19,12 @@ public class Rogue extends Character{
     public Rogue(String newName){
 	this();
 	name = newName;
-    }    
+    }
+    
+    public String about(){
+	return "\nRogue prefers to attack when their opponent is least aware. They also can steal properties from their opponents.";
+    }
+    
     public void normalize(){
 	defense = 40;
 	offense = 0.4;

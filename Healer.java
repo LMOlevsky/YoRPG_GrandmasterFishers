@@ -21,6 +21,11 @@ public class Healer extends Character{
 	name = newName;
     }
 
+    //about this character
+    public String about(){
+        return "\nHealers are a type of Mage that almost deal zero damage but instead they can help their teammates to regain hp.";
+    }
+
     //reset player stats for a normal attack
     public void normalize(){
 	defense = 40;

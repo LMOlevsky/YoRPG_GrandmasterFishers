@@ -110,15 +110,20 @@ public class YoRPG
 		pat = new Warrior(name);
 		break;
 	    } else if ( role.equals("About Archer") ){
-		System.out.println( Character.about("Archer") );
+		pat = new Archer(name);
+		System.out.println( pat.about() );
 	    } else if ( role.equals("About Healer") ){
-		System.out.println( Character.about("Healer") );
+		pat = new Healer(name);
+		System.out.println(pat.about() );
 	    } else if ( role.equals("About Mage") ){
-		System.out.println( Character.about("Mage") );
+		pat = new Mage(name);
+		System.out.println(pat.about() );
 	    } else if ( role.equals("About Rogue") ){
-		System.out.println( Character.about("Rogue") );
+		pat = new Rogue(name);
+		System.out.println(pat.about() );
 	    } else if ( role.equals("About Warrior") ){
-		System.out.println( Character.about("Warrior") );
+		pat = new Warrior(name);
+		System.out.println(pat.about() );
 	    }
 	    
 	}

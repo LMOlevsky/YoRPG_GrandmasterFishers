@@ -13,6 +13,11 @@ public class Monster extends Character{
 	//set strength to random int in range [20,65)
 	strength = (int)(Math.random() * 45 + 20);
     }
+    
+    public String about(){
+	return  "\nMonsters are NPCs that spread all over the map. Killing them can gain experience and golds and weapons.";
+    }
+    
     public void normalize(){
 	defense = 40;
 	offense = 0.4;

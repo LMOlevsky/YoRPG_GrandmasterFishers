@@ -20,6 +20,10 @@ public class Mage extends Character{
 	this();
 	name = newName;
     }
+
+    public String about(){
+       return "\nMage is a Glass Cannon, blasting away at long range, but easily taken down at close range.";
+    }
     
     //reset player stats for a normal attack
     public void normalize(){
