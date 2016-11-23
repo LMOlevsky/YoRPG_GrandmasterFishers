@@ -35,15 +35,21 @@ Repository for Team Grandmaster Fishers
 
 
 ---
+
+
+* Gameplay
+  * Show your stats (hp/defense/offense) after each move
+  * Show enemy hp
+
+
+---
 * Class Pc 
-  * Add level attribute. Stats (strength, defense, offense) correspond to level.
+  * Add level and xp (experience) attributes. Stats (strength, defense, offense) correspond to level.
+    * Increase level by collecting xp
+  * Let player choose between different kinds of attacks including using potions
   * Give class Pc inventory:
     * Create class: Item
     * Instantiate Item array in Pc to hold different Item objects
-      * Index 0 is Health Potions
-      * Index 1 is Mana Potions
-      * Index 2 is Strength Potions
-      * etc.
 
 * Class: Item +abstract. Attributes:
   * Type (Healing/Mana/Strength)
@@ -54,7 +60,8 @@ Repository for Team Grandmaster Fishers
 * Class Monster
   * Add level attribute.
     * Stats (strength, defense, offense) correspond to level.
-  * Drop gold with amount corresponding to level
+  * Drop gold and experience with amount corresponding to level
+    * Pc can collect gold to buy things and xp to level up
 
 * Figure out priorities
 
