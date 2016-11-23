@@ -20,5 +20,13 @@ public class Warrior extends Character{
 	this();
 	name = newName;
     }
+    public void specialize(){
+	defense = 20;
+	offense = 0.8;
+    }
+    public void normalize(){
+	defense = 40;
+	offense = 0.4;
+    }
     
 }

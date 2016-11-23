@@ -20,5 +20,12 @@ public class Rogue extends Character{
 	this();
 	name = newName;
     }    
-    
+    public void normalize(){
+	defense = 40;
+	offense = 0.4;
+    }
+    public void specialize(){
+	defense = 20;
+	offense = 0.8;
+    }
 }

@@ -13,5 +13,12 @@ public class Monster extends Character{
 	//set strength to random int in range [20,65)
 	strength = (int)(Math.random() * 45 + 20);
     }
-   
+    public void normalize(){
+	defense = 40;
+	offense = 0.4;
+    }
+    public void specialize(){
+	defense = 20;
+	offense = 0.8;
+    }
 }
