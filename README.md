@@ -1,2 +1,2 @@
 # YoRPG_GrandmasterFishers
-Repo for Team Grandmaster Fishers
+Repository for Team Grandmaster Fishers
