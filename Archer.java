@@ -21,4 +21,16 @@ public class Archer extends Character{
 	name = newName;
     }
 
+    //reset player stats for a normal attack
+    public void normalize(){
+	defense = 40;
+	offense = 0.4;
+    }
+
+    //Lower defense and raise offense for a special attack
+    public void specialize(){
+	defense -= 20;
+	offense += 0.4;
+    }
+    
 }
