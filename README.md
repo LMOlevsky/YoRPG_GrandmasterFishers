@@ -32,8 +32,10 @@ Repository for Team Grandmaster Fishers
       * Monster
       * Merchant
   * Item
+
+
 ---
-* Class Pc
+* Class Pc 
   * Add level attribute. Stats (strength, defense, offense) correspond to level.
   * Give class Pc inventory:
     * Create class: Item
