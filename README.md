@@ -43,9 +43,13 @@ Repository for Team Grandmaster Fishers
 
 
 ---
-* Class Pc 
+
+
+* Class Character
   * Add level and xp (experience) attributes. Stats (strength, defense, offense) correspond to level.
-    * Increase level by collecting xp
+
+* Class Pc 
+  * Increase level by collecting xp
   * Let player choose between different kinds of attacks including using potions
   * Give class Pc inventory:
     * Create class: Item
@@ -58,10 +62,8 @@ Repository for Team Grandmaster Fishers
 * Class Merchant: Sells Pc potions for gold
 
 * Class Monster
-  * Add level attribute.
-    * Stats (strength, defense, offense) correspond to level.
   * Drop gold and experience with amount corresponding to level
-    * Pc can collect gold to buy things and xp to level up
+  * Class Pc can collect dropped gold to buy things and xp to level up
 
 * Figure out priorities
 
