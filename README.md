@@ -5,7 +5,7 @@ Levee Olevsky, Areef Roktim, Youki Wu
 
 Repository for Team Grandmaster Fishers
 
-## Features 
+## Current Features 
 
 * Stats (Offense, Defense, Hp)
 * Attack Types (Normalize, Specialize)
@@ -32,7 +32,7 @@ Repository for Team Grandmaster Fishers
       * Monster
       * Merchant
   * Item
-
+---
 * Class Pc
   * Add level attribute. Stats (strength, defense, offense) correspond to level.
   * Give class Pc inventory:
