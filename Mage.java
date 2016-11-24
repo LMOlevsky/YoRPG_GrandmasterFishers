@@ -1,9 +1,9 @@
 //Team Grandmaster Fishers -- Youki Wu, Areef Roktim, Levee Olevsky
 //APCS1 pd4
-//HW34 -- Ye Olde Role Playing Game, Unchained
-//2016-11-22
+//HW35 -- Ye Olde Role Playing Game, Realized
+//2016-11-28
 
-public class Mage extends Character{
+public class Mage extends Pc{
 
     //constructors
 
@@ -23,18 +23,6 @@ public class Mage extends Character{
 
     public String about(){
        return "\nMage is a Glass Cannon, blasting away at long range, but easily taken down at close range.";
-    }
-    
-    //reset player stats for a normal attack
-    public void normalize(){
-	defense = 40;
-	offense = 0.4;
-    }
-
-    //Lower defense and raise offense for a special attack
-    public void specialize(){
-	defense -= 20;
-	offense += 0.4;
     }
     
 }

@@ -1,9 +1,9 @@
 //Team Grandmaster Fishers -- Youki Wu, Areef Roktim, Levee Olevsky
 //APCS1 pd4
-//HW34 -- Ye Olde Role Playing Game, Unchained
-//2016-11-22
+//HW35 -- Ye Olde Role Playing Game, Realized
+//2016-11-28
 
-public class Archer extends Character{
+public class Archer extends Pc{
 
     //constructors
 
@@ -26,16 +26,5 @@ public class Archer extends Character{
 	return "\nArchers are range weaponry that can also put down traps and have a pet to assist them.";
     }
     
-    //reset player stats for a normal attack
-    public void normalize(){
-	defense = 40;
-	offense = 0.4;
-    }
-
-    //Lower defense and raise offense for a special attack
-    public void specialize(){
-	defense -= 20;
-	offense += 0.4;
-    }
     
 }

@@ -1,7 +1,7 @@
 //Team Grandmaster Fishers -- Youki Wu, Areef Roktim, Levee Olevsky
 //APCS1 pd4
-//HW34 -- Ye Olde Role Playing Game, Unchained
-//2016-11-22
+//HW35 -- Ye Olde Role Playing Game, Realized
+//2016-11-28
 
 public abstract class Character{
 

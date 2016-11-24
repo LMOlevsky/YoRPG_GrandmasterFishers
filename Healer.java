@@ -1,9 +1,9 @@
 //Team Grandmaster Fishers -- Youki Wu, Areef Roktim, Levee Olevsky
 //APCS1 pd4
-//HW34 -- Ye Olde Role Playing Game, Unchained
-//2016-11-22
+//HW35 -- Ye Olde Role Playing Game, Realized
+//2016-11-28
 
-public class Healer extends Character{
+public class Healer extends Pc{
 
     //constructors
 
@@ -24,18 +24,6 @@ public class Healer extends Character{
     //about this character
     public String about(){
         return "\nHealers are a type of Mage that almost deal zero damage but instead they can help their teammates to regain hp.";
-    }
-
-    //reset player stats for a normal attack
-    public void normalize(){
-	defense = 40;
-	offense = 0.4;
-    }
-
-    //Lower defense and raise offense for a special attack
-    public void specialize(){
-	defense -= 20;
-	offense += 0.4;
     }
     
 }

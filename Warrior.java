@@ -1,9 +1,9 @@
 //Team Grandmaster Fishers -- Youki Wu, Areef Roktim, Levee Olevsky
 //APCS1 pd4
-//HW34 -- Ye Olde Role Playing Game, Unchained
-//2016-11-22
+//HW35 -- Ye Olde Role Playing Game, Realized
+//2016-11-28
 
-public class Warrior extends Character{
+public class Warrior extends Pc{
 
     //constructors
 
@@ -23,15 +23,6 @@ public class Warrior extends Character{
 
     public String about(){
 	return "\nWarriors are melee specialists wielding close range weaponry and good at fighting enemies in head-to-head combat.";
-    }
-    
-    public void specialize(){
-	defense = 20;
-	offense = 0.8;
-    }
-    public void normalize(){
-	defense = 40;
-	offense = 0.4;
     }
     
 }

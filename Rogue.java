@@ -1,9 +1,9 @@
 //Team Grandmaster Fishers -- Youki Wu, Areef Roktim, Levee Olevsky
 //APCS1 pd4
-//HW34 -- Ye Olde Role Playing Game, Unchained
-//2016-11-22
+//HW35 -- Ye Olde Role Playing Game, Realized
+//2016-11-28
 
-public class Rogue extends Character{
+public class Rogue extends Pc{
 
     //constructors
 
@@ -25,12 +25,4 @@ public class Rogue extends Character{
 	return "\nRogue prefers to attack when their opponent is least aware. They also can steal properties from their opponents.";
     }
     
-    public void normalize(){
-	defense = 40;
-	offense = 0.4;
-    }
-    public void specialize(){
-	defense = 20;
-	offense = 0.8;
-    }
 }
