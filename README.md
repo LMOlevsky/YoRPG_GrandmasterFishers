@@ -22,14 +22,14 @@ Repository for Team Grandmaster Fishers
 
 * Change class heirarchy to such:
   * Character
+    * Monster
     * Pc (playable charcters) +abstract
       * Healer 	   // We need to balance these characters
       * Mage	   // Change their hp, strength, etc. to both fit the role
       * Warrior	   // and not be over/under-powered
       * Rogue
       * Archer
-    * Npc (non-playable charcters) +abstract
-      * Monster
+    * Npc (non-playable charcters) +abstract      
       * Merchant
   * Item
 
