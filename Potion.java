@@ -27,6 +27,7 @@ public class Potion extends Item{
 	if (_attribute == "hp"){
 	    //heal player by dealing negative damage
 	    player.lowerHP(-1 * _strength);
+	    System.out.println(player.getName() + " now has " + player.getHP() + "hp.");
 	    return true;
 	}
 	return false;

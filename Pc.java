@@ -21,13 +21,6 @@ public abstract class Pc extends Character{
 	    retBool = ((Potion)item).usedBy(this);
 	    _inventory[i]=empty;
 	}
-	/* example for potential Armor item,
-	else if ( item.toString() == "Armor"){
-	    defense+=20;
-	    _inventory[i]=empty;
-	    retBool=true;
-	}
-	*/
 	else if ( item.toString() == "Empty" ){
 	    System.out.println("Not a valid item.");
 	}
