@@ -42,8 +42,6 @@ public abstract class Character{
     //prepares warrior to perform a special attack
     //decreases defense by 20
     //increases offense by .4
-    public abstract void specialize();
-    public abstract void normalize();
 
-    public abstract String about();
+
 }
