@@ -21,6 +21,10 @@ public abstract class Character{
     public int getDefense(){
 	return defense;
     }
+
+    public int getHP(){
+	return hp;
+    }
     
     public String getName(){
 	return name;
@@ -31,17 +35,13 @@ public abstract class Character{
 	hp -= dmg;
     }
 
-    public int attack(Character shrek){
-	int dmg= (int)(strength * offense) - shrek.getDefense();
+    public int attack(Character opponent){
+	int dmg= (int)(strength * offense) - opponent.getDefense();
 	if (dmg < 0){
 	    dmg = 0;
 	}
-	shrek.lowerHP(dmg);
+	opponent.lowerHP(dmg);
 	return dmg;
     }
-    //prepares warrior to perform a special attack
-    //decreases defense by 20
-    //increases offense by .4
-
 
 }

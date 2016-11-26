@@ -5,8 +5,36 @@
 
 public abstract class Pc extends Character{
 
+    //instance variables
+    
     //Give Pc 10 inventory spaces
-    Item[] inventory = new Item[10];
+    public Item empty = new Item(); //An empty item object
+    //Initialize player 2 potions and the rest empty
+    public Item[] _inventory = {new Potion(), new Potion(), empty, empty, empty, empty, empty, empty, empty, empty}; 
+
+
+    public boolean useItem(int i){
+	Item item=_inventory[i];
+	boolean retBool=false;
+        if ( item.toString() == "Potion" ){	    
+	    //typecast to class Potion to use usedBy() method
+	    retBool = ((Potion)item).usedBy(this);
+	    if (item.getQuantity() == 0){
+		_inventory[i]=empty;
+	    }
+	}
+	/* example for potential Armor item,
+	else if ( item.toString() == "Armor"){
+	    defense+=20;
+	    retBool=true;
+	}
+	*/
+	else if ( item.toString() == "Empty" ){
+	    System.out.println("Not a valid item.");
+	}
+	return retBool;
+    }
+    
     
     //reset player stats for a normal attack
     public void normalize(){

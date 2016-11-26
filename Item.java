@@ -3,11 +3,11 @@
 //HW35 -- Ye Olde Role Playing Game, Realized
 //2016-11-28
 
-//To be used to inventory of class Pc
+//To be used in inventory of class Pc
 public class Item{
     //instance vars
-    String _type;
-    int _quantity;
+    protected String _type;
+    protected int _quantity;
 
     //constructors
     public Item(){
@@ -28,7 +28,10 @@ public class Item{
     public boolean isEqual(Item thing){
 	return _type==thing.toString();
     }
-    
-    
+
+    //accessors
+    public int getQuantity(){
+	return _quantity;
+    }
     
 }

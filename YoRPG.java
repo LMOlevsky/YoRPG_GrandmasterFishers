@@ -20,7 +20,7 @@ public class YoRPG
     public final static int MAX_ENCOUNTERS = 5;
 
     //each round, a Warrior and a Monster will be instantiated...
-    private Character pat;   //Is it man or woman?
+    private Pc pat;   //Is it man or woman?
     private Monster smaug; //Friendly generic monster name?
 
     private int moveCount;
@@ -153,9 +153,40 @@ public class YoRPG
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
+		//Print player and enemy health
+		System.out.println( "\n" + pat.getName() + " has " + pat.getHP() + " hp.");
+		System.out.println( "Yo Olde Monster has " + smaug.getHP() + " hp.");
+		
+		// Print out user's current inventory
+		String s="\nInventory:\n";
+		for (int index=0; index < pat._inventory.length; index++){
+		    s+="\t(" + index + ") " + pat._inventory[index];
+		    if (index==4){ s+="\n"; } //add newline every 5 items
+		}
+		System.out.println(s);
+
+		
+		// Let user use items from their inventory
+		boolean usedItem=false;
+		while ( !usedItem ){
+		    try {
+			System.out.print( "Use item (-1 to use no item): " );
+			i = Integer.parseInt( in.readLine() );
+		    }
+		    catch ( IOException e ) { }
+		    if (i == -1){
+			break;
+		    } else {
+			//usedItem = pat.useItem(pat._inventory[i]);
+			usedItem = pat.useItem(i);
+		    }
+		}
+		
+		
 		// Give user the option of using a special attack:
 		// If you land a hit, you incur greater damage,
 		// ...but if you get hit, you take more damage.
+		i=1;
 		try {
 		    System.out.println( "\nDo you feel lucky?" );
 		    System.out.println( "\t1: Nay.\n\t2: Aye!" );
@@ -173,9 +204,10 @@ public class YoRPG
 
 		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
 				    " points of damage.");
-
-		System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
+		System.out.println( "Ye Olde Monster smacked " + pat.getName() +
 				    " for " + d2 + " points of damage.");
+
+		
 	    }//end while
 
 	    //option 1: you & the monster perish
