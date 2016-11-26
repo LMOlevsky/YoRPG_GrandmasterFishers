@@ -174,10 +174,9 @@ public class YoRPG
 			i = Integer.parseInt( in.readLine() );
 		    }
 		    catch ( IOException e ) { }
-		    if (i == -1){
+		    if (i == -1){ //if player doesnt want to use any items, break
 			break;
 		    } else {
-			//usedItem = pat.useItem(pat._inventory[i]);
 			usedItem = pat.useItem(i);
 		    }
 		}
