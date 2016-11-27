@@ -17,6 +17,7 @@ public class Archer extends Pc{
 	lv = 1;
 	exp = 0;
 	maxExp = 100;
+	money = 100;
     }
     //init. all attributes and rename archer
     public Archer(String newName){

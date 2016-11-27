@@ -14,7 +14,7 @@ public abstract class Character{
     protected int exp;
     protected int lv;
     protected int maxExp;
-    protected double money;
+    protected int money;
 
     public double getMoney(){
 	return money;

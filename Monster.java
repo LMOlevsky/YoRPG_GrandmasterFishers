@@ -12,7 +12,13 @@ public class Monster extends Character{
 	offense = 1;
 	//set strength to random int in range [20,65)
 	strength = (int)(Math.random() * 45 + 20);
-	exp = (int)(Math.random() * 1000);
+	exp = (int)(Math.random() * 100);
+	money = (int)(Math.random() * 100);
+    }
+
+    public Monster(int level){
+	this();
+	exp = level * exp;
     }
     
     public String about(){
