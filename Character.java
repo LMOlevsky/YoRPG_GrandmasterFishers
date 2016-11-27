@@ -11,11 +11,18 @@ public abstract class Character{
     protected int strength;
     protected int defense;
     protected double offense; //attack rating
+<<<<<<< HEAD
     protected int exp;
     protected int lv;
     protected int maxExp;
+=======
+    protected double money;
+>>>>>>> 80d88c3be2604be67b2a82ea0315e1def98fa6f1
 
-
+    public double getMoney(){
+	return money;
+    }
+    
    public boolean isAlive(){
 	return hp > 0;
     }
