@@ -10,10 +10,11 @@ public class Mage extends Pc{
     //initialize all attributes
     public Mage(){
 	name = "Nobody";
-	hp = 50;
+	hp = 60;
 	strength = 200;
 	defense = 20;
 	offense = 1.0;
+	money = 100;
     }
     //init. all attributes and rename warrior
     public Mage(String newName){

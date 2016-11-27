@@ -153,8 +153,8 @@ public class YoRPG
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
-		//Print player and enemy health
-		System.out.println( "\n" + pat.getName() + " has " + pat.getHP() + " hp.");
+		//Print player health and gold  and enemy health
+		System.out.println( "\n" + pat.getName() + " has " + pat.getHP() + " hp and " + pat.getMoney() + " gold.");
 		System.out.println( "Yo Olde Monster has " + smaug.getHP() + " hp.");
 		
 		// Print out user's current inventory
@@ -207,6 +207,8 @@ public class YoRPG
 		System.out.println( "Ye Olde Monster smacked " + pat.getName() +
 				    " for " + d2 + " points of damage.");
 
+
+		
 		
 	    }//end while
 
@@ -221,6 +223,26 @@ public class YoRPG
 	    //option 2: you slay the beast
 	    else if ( !smaug.isAlive() ) {
 		System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
+		//Choice to buy something
+		String shop = "";
+		try {
+		    System.out.print("/nWould you like to buy something? (yes/no): ");
+		    shop = in.readLine();
+		}
+		catch ( IOException e ) { }
+
+		if(shop.equals("yes")){
+		    String buy = "";
+		    try {
+			System.out.print("Wanna buy a potion? (yes/no)): ");
+			buy = in.readLine();
+		    }
+		    catch ( IOException e ) { }
+		    if(buy.equals("yes")){
+			System.out.println(pat.buyPotion());
+		    }
+		}
+		
 		return true;
 	    }
 	    //option 3: the beast slays you
