@@ -14,12 +14,12 @@ public abstract class Pc extends Character{
 
 
     public boolean useItem(int i){
-	Item item=_inventory[i];
+	Item item = _inventory[i];
 	boolean retBool=false;
         if ( item.toString() == "Potion" ){	    
 	    //typecast to class Potion to use usedBy() method
 	    retBool = ((Potion)item).usedBy(this);
-	    _inventory[i]=empty;
+	    _inventory[i] = empty;
 	}
 	else if ( item.toString() == "Empty" ){
 	    System.out.println("Not a valid item.");

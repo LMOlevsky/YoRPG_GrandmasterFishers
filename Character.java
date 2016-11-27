@@ -11,6 +11,9 @@ public abstract class Character{
     protected int strength;
     protected int defense;
     protected double offense; //attack rating
+    protected int exp;
+    protected int lv;
+    protected int maxExp;
 
 
    public boolean isAlive(){
@@ -28,6 +31,10 @@ public abstract class Character{
     
     public String getName(){
 	return name;
+    }
+
+    public int getLevel(){
+	return lv;
     }
     
     //Decreases life attribute by damage

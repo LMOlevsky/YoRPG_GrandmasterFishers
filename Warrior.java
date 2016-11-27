@@ -14,6 +14,9 @@ public class Warrior extends Pc{
 	strength = 100;
 	defense = 40;
 	offense = 0.4;
+	lv = 1;
+	exp = 0;
+	maxExp = 100;
     }
     //init. all attributes and rename warrior
     public Warrior(String newName){
@@ -21,6 +24,8 @@ public class Warrior extends Pc{
 	name = newName;
     }
 
+    
+    
     public String about(){
 	return "\nWarriors are melee specialists wielding close range weaponry and good at fighting enemies in head-to-head combat.";
     }

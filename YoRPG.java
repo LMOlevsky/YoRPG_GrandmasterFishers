@@ -220,6 +220,14 @@ public class YoRPG
 	    //option 2: you slay the beast
 	    else if ( !smaug.isAlive() ) {
 		System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
+		pat.exp += smaug.exp;
+		while (pat.maxExp < pat.exp){
+		    pat.exp -= pat.maxExp;
+		    pat.lv += 1;
+		    pat.maxExp = pat.lv * 100;
+		}
+		System.out.println("Your experienec: " + pat.exp
+				   + "\nYour level: " + pat.lv);
 		return true;
 	    }
 	    //option 3: the beast slays you

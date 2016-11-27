@@ -14,6 +14,9 @@ public class Rogue extends Pc{
 	strength = 200;
 	defense = 20;
 	offense = 1.0;
+	lv = 1;
+	exp = 0;
+	maxExp = 100;
     }
     //init. all attributes and rename warrior
     public Rogue(String newName){
