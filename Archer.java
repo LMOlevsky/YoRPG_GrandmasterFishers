@@ -15,7 +15,7 @@ public class Archer extends Pc{
 	defense = 20;
 	offense = 1.0;
 	lv = 1;
-	exp = 0;
+	exp = 0;w
 	maxExp = 100;
 	money = 100;
     }
