@@ -8,9 +8,15 @@ public abstract class Pc extends Character{
     //instance variables
     
     //Give Pc 10 inventory spaces
+<<<<<<< HEAD
 	public Item empty = new Item(); //An empty item object
     //Initialize player 2 potions and the rest empty
     public Item[] _inventory = {new Potion(), new Potion(), empty, empty, empty, empty, empty, empty, empty, empty}; 
+=======
+    public Item empty = new Item(); //An empty item object
+    //Initialize player with a potion that heals 25 hp.
+    public Item[] _inventory = {new Potion( "hp", 25 ), empty, empty, empty, empty, empty, empty, empty, empty, empty}; 
+>>>>>>> d9b156b7f1fd3b578974ea73f65be0fff55a62e5
 
 
     public boolean useItem(int i){
@@ -19,16 +25,17 @@ public abstract class Pc extends Character{
         if ( item.toString() == "Potion" ){	    
 	    //typecast to class Potion to use usedBy() method
 	    retBool = ((Potion)item).usedBy(this);
-	    if (item.getQuantity() == 0){
-		_inventory[i]=empty;
-	    }
+	    _inventory[i]=empty;
 	}
+<<<<<<< HEAD
 	/* example for potential Armor item,
 	   else if ( item.toString() == "Armor"){
 	   defense+=20;
 	   retBool=true;
 	   }
 	*/
+=======
+>>>>>>> d9b156b7f1fd3b578974ea73f65be0fff55a62e5
 	else if ( item.toString() == "Empty" ){
 	    System.out.println("Not a valid item.");
 	}
