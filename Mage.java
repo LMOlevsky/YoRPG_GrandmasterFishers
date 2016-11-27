@@ -14,13 +14,10 @@ public class Mage extends Pc{
 	strength = 200;
 	defense = 20;
 	offense = 1.0;
-<<<<<<< HEAD
 	lv = 1;
 	exp = 0;
 	maxExp = 100;
-=======
 	money = 100;
->>>>>>> 80d88c3be2604be67b2a82ea0315e1def98fa6f1
     }
     //init. all attributes and rename warrior
     public Mage(String newName){

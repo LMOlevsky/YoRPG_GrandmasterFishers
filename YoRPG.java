@@ -222,7 +222,6 @@ public class YoRPG
 	    //option 2: you slay the beast
 	    else if ( !smaug.isAlive() ) {
 		System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
-<<<<<<< HEAD
 		pat.exp += smaug.exp;
 		while (pat.maxExp < pat.exp){
 		    pat.exp -= pat.maxExp;
@@ -231,7 +230,6 @@ public class YoRPG
 		}
 		System.out.println("Your experienec: " + pat.exp
 				   + "\nYour level: " + pat.lv);
-=======
 		//Choice to buy something
 		String shop = "";
 		try {
@@ -252,7 +250,6 @@ public class YoRPG
 		    }
 		}
 		
->>>>>>> 80d88c3be2604be67b2a82ea0315e1def98fa6f1
 		return true;
 	    }
 	    //option 3: the beast slays you
