@@ -13,11 +13,16 @@ public abstract class Pc extends Character{
     public Item[] _inventory = {new Potion(), new Potion(), empty, empty, empty, empty, empty, empty, empty, empty}; 
 
     public boolean useItem(int i){
+	if (i > _inventory.length-1){
+	    System.out.println("Not a valid item.");
+	    return false;
+	}
 	Item item = _inventory[i];
 	boolean retBool=false;
         if ( item.toString() == "Potion" ){	    
 	    //typecast to class Potion to use usedBy() method
 	    retBool = ((Potion)item).usedBy(this);
+	    //make the used item slot empty
 	    _inventory[i] = empty;
 	}
 	/* example for potential Armor item,
