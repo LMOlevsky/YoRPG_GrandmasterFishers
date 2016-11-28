@@ -233,7 +233,7 @@ public class YoRPG
 		//Choice to buy something
 		String shop = "";
 		try {
-		    System.out.print("/nWould you like to buy something? (yes/no): ");
+		    System.out.print("\nWould you like to buy something? (yes/no): ");
 		    shop = in.readLine();
 		}
 		catch ( IOException e ) { }
@@ -241,7 +241,7 @@ public class YoRPG
 		if(shop.equals("yes")){
 		    String buy = "";
 		    try {
-			System.out.print("Wanna buy a potion? (yes/no)): ");
+			System.out.print("\nWanna buy a potion? (yes/no): ");
 			buy = in.readLine();
 		    }
 		    catch ( IOException e ) { }
