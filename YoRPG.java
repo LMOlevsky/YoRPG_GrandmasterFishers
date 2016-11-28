@@ -168,7 +168,8 @@ public class YoRPG
 		
 		// Let user use items from their inventory
 		boolean usedItem=false;
-		while ( !usedItem ){
+		//While the player hasn't used an item and has items in their inventory, prompt for player to use item
+		while ( pat.hasItem() && !usedItem ){
 		    try {
 			System.out.print( "Use item (-1 to use no item): " );
 			i = Integer.parseInt( in.readLine() );
@@ -233,6 +234,7 @@ public class YoRPG
 		//Choice to buy something
 		String shop = "";
 		try {
+		    System.out.println("Current money: " + pat.getMoney());
 		    System.out.print("\nWould you like to buy something? (yes/no): ");
 		    shop = in.readLine();
 		}

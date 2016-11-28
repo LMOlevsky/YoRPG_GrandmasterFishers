@@ -36,6 +36,16 @@ public abstract class Pc extends Character{
 	}
 	return retBool;
     }
+    //returns true if player has any items
+    public boolean hasItem(){
+	for (Item s: _inventory){
+	    //if an item is not an empty item, return true
+	    if ( !s.isEqual(empty) ){
+		return true;
+	    }
+	}
+	return false;
+    }
     
     
     //reset player stats for a normal attack
@@ -73,5 +83,9 @@ public abstract class Pc extends Character{
 	    return "You bought a potion";
 	}
 	return "Insufficient funds or your inventory is full";
+    }
+    //accessor method
+    public double getMoney(){
+	return money;
     }
 }

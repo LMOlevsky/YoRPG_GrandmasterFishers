@@ -22,7 +22,7 @@ public class Item{
     }
     
     public boolean isEqual(Item thing){
-	return _type==thing.toString();
+	return _type.equals(thing.toString());
     }
     
 }
